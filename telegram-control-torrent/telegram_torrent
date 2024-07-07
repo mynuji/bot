@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# cd /etc/init.d
+# sudo vi telegram_torrent
+#
+# sudo chmod 755 telegram_torrent
+# 
+
+case "$1" in
+  start)
+    eval "cd /home/igi/bot/telegram-control-torrent/"
+    echo "Starting telegram_torrent....."
+    eval "./run_telegram_torrent.sh &"
+    ;;
+  stop)
+    echo "telegram_torrent stopped..."
+    eval "pkill -9 -f telegram_torrent"
+    ;;
+  *)
+  echo "Usage: /etc/init.d/telegram_torrent {start|stop}"
+  exit 1
+  ;;
+esac
+
+exit 0
+    
