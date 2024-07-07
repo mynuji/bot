@@ -1,19 +1,19 @@
 {
     "common": {
-        "token": "5948071639:AAGc9TNsSP0YKfVIRwqD8WYco4eraxHupFE",
+        "token": "9548071639:AAGc9TNsSP0YKfVIRwqD8WYco4eraxHupEF",
         "valid_users": [
-            52802378,
-            5842598695
+            25802378,
+            8542598695
         ],
         "agent_type": "transmission",
-        "download_path": "/home/igi/bot/torrent/",
-        "torrent_file_path": "/home/igi/bot/torrent/tmp/",
+        "download_path": "/home/userid/bot/torrent/",
+        "torrent_file_path": "/home/userid/bot/torrent/tmp/",
         "url_fmt": "https://www.torrentbot{}.com",
         "start_url": "146",
         "param": "/search/index?category=0&keywords="
     },
     "transmission": {
-        "id_pw": "igi:99999999",
+        "id_pw": "userid:pwd",
         "port": "9091"
     }
 }
