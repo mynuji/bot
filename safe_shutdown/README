@@ -1,14 +1,3 @@
-$ sudo vi /etc/systemd/system/safe_shutdown.service
+$ sudo cp safe_shutdown.service /etc/systemd/system/.
 
-[Unit]
-Description=Safe Shutdown Script
-After=network.target
-
-[Service]
-Type=simple
-ExecStart=/home/igi/bot/safe_shutdown/run_safe_shutdown.sh
-Restart=on-failure
-
-[Install]
-WantedBy=multi-user.target
 
