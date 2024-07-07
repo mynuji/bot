@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# cd /etc/init.d
+# sudo vi safe_shutdown
+#
+# sudo chmod 755 safe_shutdown
+# 
+
+case "$1" in
+  start)
+    eval "cd /home/igi/bot/safe_shutdown/"
+    echo "Starting safe_shutdown....."
+    eval "./run_safe_shutdown.sh &"
+    ;;
+  stop)
+    echo "safe_shutdown stopped..."
+    eval "pkill -9 -f safe_shutdown"
+    ;;
+  *)
+  echo "Usage: /etc/init.d/safe_shutdown {start|stop}"
+  exit 1
+  ;;
+esac
+
+exit 0
+    
