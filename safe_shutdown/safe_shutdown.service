@@ -6,7 +6,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/home/igi/bot/safe_shutdown/run_safe_shutdown.sh
+ExecStart=/home/userid/bot/safe_shutdown/run_safe_shutdown.sh
 Restart=on-failure
 
 [Install]
